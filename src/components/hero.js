@@ -6,7 +6,7 @@ export default function Hero({ title1, title2,subtitle }) {
       <div className={styles.text}>
         <h2 className={styles.title1}>{title1}</h2>
         <h2 className={styles.title2}>{title2}</h2>
-        <h3 className={styles.subtitle}>{subtitle}</h3>
+        <h3 className={`${styles.subtitle} ${[styles.fade-top]}`}>{subtitle}</h3>
       </div>
       <figure className={styles.hero}></figure>
     </div>

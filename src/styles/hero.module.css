@@ -114,3 +114,15 @@
     font-weight: 900;
   }
 }
+
+.fade-top {
+  animation: firstcatch 1.9s 0s linear forwards;  
+}
+@keyframes firstcatch {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,8 +1,8 @@
 import Layout from '../components/layout'
 import Hero from '../components/hero'
 import styles from '../styles/layout.module.scss'
-import '../pages/main'
-
+import Btn from '@/components/btn'
+import ScrollFadeIn from '@/components/scrollFadeIn'
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
                 <div className={styles.categoryTtl}>
                 <div className={`${styles.categoryTtlInner} ${[styles.js-scroll-trigger-ttl]}`}>
                     <h2>
-                      <span className={styles.categoryTtlUp}>第1回 開催日</span>
+                      <span className={`${styles.categoryTtlUp} ${[styles.u-animation-fadein]}`}>第1回 開催日</span>
                     <span className={`${styles.categoryTtlBottom} ${styles.fadeTypeSame}`}>2023年3月19日(日)10:00</span>
                     </h2>
                   </div>
@@ -161,18 +161,11 @@ export default function Home() {
           <div className={styles.inner}>
             <div className={styles.triangleBaseColor3}></div>
             <div className={styles.singleColumn}>
-              <img
-                src="http://toin.ac.jp/ouen/event/opencampus/asset/OC2020_onegai.jpg"
-                className={styles.pictureAsk}
-                alt="新型コロナウイルス感染症予防のお願い"
-              />
+              <img className={styles.pictureAsk} alt="新型コロナウイルス感染症予防のお願い" />
             </div>
           </div>
-        </section>
-
-        <a href="#"><div id={styles.scrollPageTop} type="button" className={styles.fixedBtn}>
-            <div className={styles.arrow}><span className={styles.arrowTop}></span></div></div>
-            </a>
+        </section>  
+      <Btn />
     </Layout>
         
   )
