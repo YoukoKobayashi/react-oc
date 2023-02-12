@@ -1,8 +1,29 @@
 .wrapper {
   padding: var(--space-xl) 0;
-  background-color: var(--gray-10);
+  background-color: var(--main);
+  color: var(--white);
 }
 .flexContainer {
   composes: sideBySideCenter from './utils.module.css';
   gap: 2em;
 }
+.copyRight {
+    text-align: center;
+}
+.icnExternalLink::after {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-image: url(../../public/icon-external-link-white.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: baseline;
+    margin: 0 0 0 4px; 
+}
+.icnExternalLink:hover {
+    border-bottom-color: var(--white);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+

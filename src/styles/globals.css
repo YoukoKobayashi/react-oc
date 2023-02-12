@@ -1,21 +1,52 @@
 :root {
   /*  color */
-  --white: #ffffff;
   --gray-10: #eeeeee;
   --gray-25: #aaaaaa;
   --gray-50: #707070;
   --gray-75: #444444;
   --black: #222222;
-  --accent: #0d87e0;
+
+  ---white: #fff;
+  --main: #191970;
+  --base: #435b99;
+  --base3: rgba(125, 160, 219, 0.2);
+  --accent: #bed5e7; 
+  --btn: #2b63a8;
+  --nav: #6a9bd9;
+  --lighting: rgba(252, 240, 242, 0.7); 
+  --accent2:rgba(190, 213, 231, .5);
+  --accent3:rgba(84, 205, 214, .3);
+  --accent4:rgba(84, 205, 214, .6);
+
 
   /*  タイポグラフィ  */
   --body: clamp(1rem, 0.95rem + 0.2vw, 1.125rem);
-  --display: clamp(4.5rem, 1.83rem + 11.34vw, 10rem);
+  /* --display: clamp(4.5rem, 1.83rem + 11.34vw, 10rem); */
+  --display: clamp(4.5rem, 1.83rem + 11.34vw, 7.2rem);
   --heading1: clamp(2rem, 1.3rem + 3vw, 4rem);
   --heading2: calc(var(--body)*1.5);
   --heading3: calc(var(--body)*1.2);
   --small-heading2: clamp(0.875rem, 4vw - 1rem, 1.6875rem);
   --small-heading3: calc(var(--small-heading2)*0.86);
+
+--font-all: 18px;
+--font-lg: 18px; 
+--font-ltb: 16px;
+--font-tb: 15px;
+--font-sp: 14px; 
+
+--font-ttl-all: 22px; 
+--font-ttl-lg: 22px; 
+--font-ttl-ltb: 19px;
+--font-ttl-tb: 17px;
+--font-ttl-sp: 15px; 
+
+--font-categoryttlup-all: 46px; 
+--font-categoryttlup-lg: 44px; 
+--font-categoryttlup-ltb: 40px; 
+--font-categoryttlup-tb: 32px;
+--font-categoryttlup-sp: 21px;
+
 
   /*  スペース：余白・間隔  */
   --space-xs: clamp(1.25rem, 1rem + 0.98vw, 1.875rem);
@@ -26,10 +57,24 @@
   --space-jump: clamp(1.25rem, 0.35rem + 3.8vw, 3.75rem);
 }
 
+
+  /*  mediaQuery  */
+:root {
+  --lg: "screen and (min-width: 901px) and (max-width: 1280px)";
+  --pc: "print,screen and (min-width: 901px)";
+  --ltb: "screen and (max-width: 900px)";
+  --tb: "screen and (max-width: 768px)";
+  --sp: "screen and (max-width: 499px)"; 
+}
+
+
 /*  basic */
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Sawarabi+Gothic&display=swap");
+
 body {
   color: var(--black);
-  font-family: 'Courier New', Courier, monospace;
+  /* font-family: "M PLUS 1p", sans-serif; */
+  font-family: "Sawarabi Gothic", sans-serif;
   font-size: var(--body);
 }
 h1 {

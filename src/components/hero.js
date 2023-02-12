@@ -1,13 +1,14 @@
 import styles from '../styles/hero.module.css'
 
-export default function Hero({ title, subtitle, imageOn = false }) {
+export default function Hero({ title1, title2,subtitle }) {
   return (
     <div className={styles.flexContainer}>
       <div className={styles.text}>
-        <h1 className={styles.title}>{title}</h1>
-        <p className={styles.subtitle}>{subtitle}</p>
+        <h2 className={styles.title1}>{title1}</h2>
+        <h2 className={styles.title2}>{title2}</h2>
+        <h3 className={styles.subtitle}>{subtitle}</h3>
       </div>
-    {imageOn && <figure>画像</figure>}
+      <figure className={styles.hero}></figure>
     </div>
   )  
 }

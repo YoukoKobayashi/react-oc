@@ -1,0 +1,557 @@
+/*  //structure   */
+.inner {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.coverPicture,
+.wrapInnerMain,
+.singleColumn,
+.threeColumns,
+.footer {
+  overflow-x: hidden;
+}
+
+
+.ltbIgnore {
+  @media(var(--ltb)) {
+    display: none;
+  }
+}
+
+.categoryTtl {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+  .categoryTtlInner {
+    margin: 32px 0 20px;
+    padding-left: 16px;
+    width: 60%;
+    height: 140px;
+    color: var(--white);
+    @media(var(--lg)) {
+      width: 76%;
+      height: 120px;
+    }
+    @media(var(--ltb)) {
+      width: 88%;
+      height: 105px;
+    }
+    @media(var(--tb)) {
+      width: 98%;
+      height: 105px;
+    }
+    @media(var(--sp)) {
+      margin: 12px auto 0;
+      width: 98%;
+      padding-left: 0;
+      height: 95px;
+    }
+  }
+  .categoryTtlUp {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 8px 6px;
+    font-size: var(--font-ttl-all);
+    font-weight: 800;
+
+    @media(var(--lg)) {
+      font-size: var(--font-ttl-lg);
+    }
+    @media(var(--ltb)) {
+      font-size: var(--font-ttl-ltb);
+    }
+    @media(var(--tb)) {
+      font-size: var(--font-ttl-tb);
+    }
+    @media(var(--sp)) {
+      font-size: var(--font-ttl-sp);
+    }
+  }
+
+  .categoryTtlBottom {
+    display: block;
+    position: relative;
+    border-top: {
+      width: 2px;
+      style: solid;
+      color: currentColor;
+    }
+    width: 100%;
+    padding: 10px 5px 132px;
+    font-size: var(--font-categoryttlup-all);
+    font-weight: 800;
+
+    @media(var(--lg)) {
+      font-size: var(--font-categoryttlup-lg);
+    }
+    @media(var(--ltb)) {
+      font-size: var(--font-categoryttlup-ltb);
+    }
+    @media(var(--tb)) {
+      font-size: var(--font-categoryttlup-tb);
+      font-feature-settings: "palt";
+    }
+    @media(var(--sp)) {
+      font-size: var(--font-categoryttlup-sp);
+      font-feature-settings: "palt";
+    }
+  }
+
+
+/*  項目の見出し  */
+.middleTtl {
+  display: inline-block; //0127
+  position: relative;
+  width: 100%; //0127
+  margin: 16px auto 0 12px;
+  padding: 10px 0;
+  font-size: var(--font-ttl-all);
+  font-weight: 700;
+  font-feature-settings: "palt";
+  line-height: 1.6;
+
+  @media(var(var(--lg))) {
+    margin-top: 12px;
+    margin-left: 8px;
+    font-size: var(--font-ttl-lg);
+  }
+  @media(var(--ltb)) {
+    margin-top: 10px;
+    margin-left: 8px;
+    font-size: var(--font-ttl-ltb);
+  }
+  @media(var(--tb)) {
+    margin-top: 10px;
+    margin-left: 8px;
+    font-size: var(--font-ttl-tb);
+  }
+  @media(var(--sp)) {
+    margin-top: 8px;
+    margin-left: 10px;
+    padding: 0;
+    line-height: 2;
+    font-size: var(--font-ttl-sp);
+  }
+
+  span {
+    font-size: 16px;
+    @media(var(--ltb)) {
+      font-size: 14px;
+    }
+    @media(var(--tb)) {
+      font-size: 14px;
+    }
+    @media(var(--sp)) {
+      font-size: 10px;
+    }
+  }
+}
+
+/*  h3の左棒　やや大きめ　*/
+.middleTtlLeftBarLarge {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    transform: translateX(-50%);
+    padding: 0.75em;
+    border-left: 8px solid currentColor;
+    font-size: 1em;
+
+    @media(var(--ltb)) {
+      border-left: 7px solid currentColor;
+      top: 10px;
+      transform: translateX(-50%);
+    }
+    @media(var(--sp)) {
+      border-left: 5px solid currentColor;
+      top: 4px;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.txt {
+  font-weight: 600;
+  text-align: justify;
+  text-justify: inter-character;
+  line-height: 1.8;
+  margin: 0;
+  padding: 8px 0 8px;
+  font-size: --font-all;
+  @media(var(--lg)) {
+    padding-left: 0px;
+    font-size: --font-lg;
+  }
+  @media(var(--ltb)) {
+    padding: 4px 0 16px 8px;
+    font-size: --font-ltb;
+  }
+  @media(var(--tb)) {
+    font-size: --font-tb;
+  }
+  @media(var(--sp)) {
+    padding: 8px 0 16px;
+    font-size: --font-sp;
+  }
+}
+
+.txtSmallRight {
+  font-size: --font-sp;
+}
+
+/*  字下げ  */
+.ind {
+  text-indent: 1em;
+}
+
+/*  page layout */
+.threeColumns {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0px auto;
+  padding: 4px 40px;
+  @media(var(--sp)) {
+    flex-direction: column;
+    justify-content: center;
+    width: 96%;
+  }
+
+  figure {
+    display: flex;
+    max-width: 32%;
+    margin: 0 auto;
+    padding: 4px 2px;
+    @media(var(--sp)) {
+      display: block;
+      max-width: 90%;
+      margin: 0 auto;
+      padding: 2px;
+    }
+  }
+}
+
+.picture {
+  width: 100%;
+  height: auto;
+}
+
+/*  1列_layout */
+.singleColumn {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 100%;
+  margin: 0px auto;
+  padding: 4px 24px 0;
+  @media(var(--ltb)) {
+    padding: 4px 16px 0;
+  }
+  @media(var(--sp)) {
+    width: 94%;
+    padding: 8px 8px 0;
+  }
+
+  li {
+    display: block;
+  }
+}
+
+.pictureAsk {
+  max-width: 80%;
+  height: auto;
+  margin: 40px auto 12px;
+  @media(var(--tb)) {
+    max-width: 96%;
+    height: auto;
+  }
+  @media(var(--sp)) {
+    max-width: 96%;
+    height: auto;
+  }
+}
+
+/*  //以下、調整用　*/
+/*title_backcolor */
+.bc_accent {
+  background-color: var(--base);
+  color: var(---white);
+}
+/*  text_color */
+.colorMain {
+  color: var(--main);
+}
+.accent2 {
+  color: var(--accent2);
+}
+
+/*  tb,spでfont-weight */
+
+/*  margin  */
+.mt32 {
+  margin-top: 32px;
+}
+
+/*  mediaquery別 */
+@media(var(--pc)) {
+  .pcIgnore {
+    display: none;
+  }
+}
+@media(var(--ltb)) {
+  .ltbIgnore {
+    display: none;
+  }
+}
+@media(var(--tb)) {
+  .tbIgnore {
+    display: none;
+  }
+}
+@media(var(--sp)) {
+  .spIgnore {
+    display: none;
+  }
+}
+@media(var(--sp)) {
+  .spVisible {
+    display: block;
+  }
+}
+/*  //調整用ここまで  */
+
+/*  triangle to bottom   */
+.triangleMainColor {
+  position: relative;
+  margin: -10px auto;
+  width: 105px;
+  height: 35px;
+  @media(var(--ltb)) {
+    width: 90px;
+    height: 30px;
+  }
+  @media(var(--tb)) {
+    width: 75px;
+    height: 25px;
+  }
+  @media(var(--sp)) {
+    width: 60px;
+    height: 20px;
+  }
+  background: linear-gradient(to bottom left, var(--main) 50%, transparent 50%) top
+      left / 50% 100% no-repeat,
+    linear-gradient(to bottom right, var(--main) 50%, transparent 50%) top right / 50%
+      100% no-repeat;
+}
+
+.triangleBaseColor {
+  position: relative;
+  margin: -10px auto;
+  width: 105px;
+  height: 35px;
+  @media(var(--ltb)) {
+    width: 90px;
+    height: 30px;
+  }
+  @media(var(--tb)) {
+    width: 75px;
+    height: 25px;
+  }
+  @media(var(--sp)) {
+    width: 60px;
+    height: 20px;
+  }
+  background: linear-gradient(to bottom left, var(--base) 50%, transparent 50%) top
+      left / 50% 100% no-repeat,
+    linear-gradient(to bottom right, var(--base) 50%, transparent 50%) top right / 50%
+      100% no-repeat;
+}
+
+.triangleBaseColor3 {
+  position: relative;
+  margin: -10px auto;
+  width: 105px;
+  height: 35px;
+  @media(var(--ltb)) {
+    width: 90px;
+    height: 30px;
+  }
+  @media(var(--tb)) {
+    width: 75px;
+    height: 25px;
+  }
+  @media(var(--sp)) {
+    width: 60px;
+    height: 20px;
+  }
+  background: linear-gradient(to bottom left, var(--base)3 50%, transparent 50%) top
+      left / 50% 100% no-repeat,
+    linear-gradient(to bottom right, var(--base)3 50%, transparent 50%) top right /
+      50% 100% no-repeat;
+}
+
+
+/*  fade_in_animation .categoryTtl 初期値と終了値  */
+.fadeTypeSame {
+  opacity: 0;
+}
+.is-active .fadeTypeSame {
+  transition: 0.9s;
+  opacity: 1;
+}
+
+// /*  fade_in_animation top-title 初期値と終了値  */
+.fadeTop {
+  animation: firstcatch 1.9s 0s linear forwards;
+}
+
+@keyframes firstcatch {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*  sideRight-title:右にあり  */
+.wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.wrapInnerMain {
+  width: 90%;
+}
+.wrapInnerSide {
+  // display: inline-block;
+  font-size: 90px;
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 10%;
+  top: 0px;
+  left: calc(100vw - 10px);
+  @media(var(--ltb)) {
+    font-size: 60px;
+    width: 70px;
+  }
+  @media(var(--sp)) {
+    font-size: 40px;
+    width: 55px;
+    top: 200px;
+  }
+}
+
+.sideRight {
+  opacity: 1;
+  color: var(--accent2);
+}
+
+.sideRightTitleInner{
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.sideRightTitleInnerItem {
+  display: inline-block;
+  // letter-spacing: 0;
+  font-feature-settings: "palt" 1;
+  line-height: 1;
+  transform: translateX(100%);
+  transition: transform 0.4s linear,opacity 0.4s linear 0.1s;
+  will-change: transform, opacity;
+}
+
+.sideRightTitleInnerItem.is-active {
+  transform: translateX(0);
+  opacity: 1;
+}
+/*  side-right-title：右にあり__end  */
+
+/*  side-left-title:左にあり  */
+.sideLeft {
+  opacity: 1;
+  color: --accent3;
+}
+
+.sideLeftTitleInner{
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.sideLeftTitleInnerItem {
+  display: inline-block;
+  font-feature-settings: "palt" 1;
+  line-height: 1;
+  transform: translateX(-100%);
+  transition: transform 0.4s linear,opacity 0.4s linear 0.1s;
+  will-change: transform, opacity;
+}
+
+.sideLeftTitleInnerItem.is-active {
+  transform: translateX(0);
+  opacity: 1;
+}
+/*  side-left-title：左にあり__end  */
+
+/*  programs title  */
+.itemTtl{
+  display: inline-block;
+  font-size: var(--font-ttl-all);
+  font-weight: 400;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  padding: 11px;
+  width: fit-content;
+  height: fit-content;
+  border: solid 2px var(--main);
+  border-radius: 50px;
+  @media(var(--ltb)){
+    margin-left: 28px;
+    padding: 9px;
+    font-size: var(--font-ttl-ltb);
+  }
+  @media(var(--tb)){
+    padding: 8px;
+    font-size: var(--font-ttl-tb);
+  }
+  @media(var(--sp)){
+    margin-left: 16px;
+    font-size: var(--font-ttl-sp);
+  }
+}
+
+/*  programs btn  */
+.itemTtl:hover {
+  background-color: var(--accent4);
+  color: var(---white);
+  border-color: var(---white);
+  font-weight: 400;
+}
+
+#first,
+#footer {
+    background-color: var(--main);
+    color: var(--white);
+}
+#second,
+#third,
+#forth {
+    background-color: var(--base3);
+    color: var(--main);
+}

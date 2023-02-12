@@ -5,11 +5,112 @@
   padding-top: calc(var(--display)*0.5);
   padding-bottom: calc(var(--display)*0.7);
 }
-.title {
+
+.hero {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  background-image: url("http://toin.ac.jp/ouen/event/opencampus/asset/firstView.jpg");
+  @media(max-width:900px) {
+      background-image: url("http://toin.ac.jp/ouen/event/opencampus/asset/firstView_sp.jpg");
+  }
+}
+
+.title1 {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 10vh;
+  left: 4vw;
+  color: var(--white);
+  font-size: clamp(76px, 90/1200 * 100vw, 110px);
+  font-weight: 800;
+  font-feature-settings: "palt";
+  text-shadow: 0 6px 6px rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  @media(var(--lg)) {
+    font-size: clamp(74px, 90/1200 * 100vw, 90px);
+  }
+  @media(var(--ltb)) {
+    top: 26vh;
+    font-size: clamp(66px, 68/900 * 100vw, 72px);
+  }
+  @media(var(--tb)) {
+    top: 28vh;
+    font-size: clamp(58px, 64/768 * 100vw, 66px);
+    font-weight: 900;
+  }
+  @media(var(--sp)) {
+    top: 24vh;
+    left: 24px;
+    font-size: clamp(36px, 56/500 * 100vw, 58px);
+    font-weight: 900;
+  }
+}
+.title2 {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 28vh;
+  left: 4vw;
+  color: var(--white);
   font-size: var(--display);
-  font-weight: 900;
-  letter-spacing: 0.15em;
+  font-weight: 800;
+  font-feature-settings: "palt";
+  text-shadow: 0 6px 6px rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  @media(var(--lg)) {
+    font-size: clamp(74px, 90/1200 * 100vw, 90px);
+  }
+  @media(var(--ltb)) {
+    top: 26vh;
+    font-size: clamp(66px, 68/900 * 100vw, 72px);
+  }
+  @media(var(--tb)) {
+    top: 28vh;
+    font-size: clamp(58px, 64/768 * 100vw, 66px);
+    font-weight: 900;
+  }
+  @media(var(--sp)) {
+    top: 24vh;
+    left: 24px;
+    font-size: clamp(36px, 56/500 * 100vw, 58px);
+    font-weight: 900;
+  }
 }
 .subtitle {
-  font-size: var(--small-heading2);
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 76vh;
+  left: 4vw;
+  color: var(--white);
+  font-size: var(--display);
+  font-weight: 800;
+  font-feature-settings: "palt";
+  text-transform: uppercase;
+  text-shadow: 0 6px 6px rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  @media(var(--lg)) {
+    font-size: clamp(74px, 90/1200 * 100vw, 90px);
+  }
+  @media(var(--ltb)) {
+    top: 26vh;
+    font-size: clamp(66px, 68/900 * 100vw, 72px);
+  }
+  @media(var(--tb)) {
+    top: 28vh;
+    font-size: clamp(58px, 64/768 * 100vw, 66px);
+    font-weight: 900;
+  }
+  @media(var(--sp)) {
+    top: 24vh;
+    left: 24px;
+    font-size: clamp(36px, 56/500 * 100vw, 58px);
+    font-weight: 900;
+  }
 }
