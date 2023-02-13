@@ -6,8 +6,8 @@ const ScrollFadeIn = () => {
       threshold: 0.2
     };
     
-    const callback = (entries: any) => {
-      entries.forEach((entry: any) => {
+    const callback = (entries) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('is-slideIn');
         }

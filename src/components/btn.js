@@ -1,4 +1,4 @@
-import styles from '../styles/but.module.css'
+import styles from '../styles/btn.module.scss'
 
 export default function Btn() {
   return (

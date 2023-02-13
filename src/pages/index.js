@@ -2,7 +2,7 @@ import Layout from '../components/layout'
 import Hero from '../components/hero'
 import styles from '../styles/layout.module.scss'
 import Btn from '@/components/btn'
-import ScrollFadeIn from '@/components/scrollFadeIn'
+import Animation from '../components/scrollAnimation'
 
 export default function Home() {
   return (
@@ -19,10 +19,13 @@ export default function Home() {
             <div className={styles.wrap}>
               <div className={styles.wrapInnerMain}>
                 <div className={styles.categoryTtl}>
-                <div className={`${styles.categoryTtlInner} ${[styles.js-scroll-trigger-ttl]}`}>
+                <div className={styles.categoryTtlInner}>
+                  
                     <h2>
-                      <span className={`${styles.categoryTtlUp} ${[styles.u-animation-fadein]}`}>第1回 開催日</span>
-                    <span className={`${styles.categoryTtlBottom} ${styles.fadeTypeSame}`}>2023年3月19日(日)10:00</span>
+                      <span className={`${styles.categoryTtlUp} ${[u-animation-fadein]}`}>第1回 開催日</span>
+                      <Animation>
+                        <span className={`${styles.categoryTtlBottom} ${styles.fadeTypeSame}`}>2023年3月19日(日)10:00</span>
+                      </Animation>
                     </h2>
                   </div>
                 </div>
@@ -46,34 +49,34 @@ export default function Home() {
               <div className={styles.wrapInnerSide}>
                   <span className={styles.sideRight}>
                     <span className={styles.sideRightTitleInner} datatext="O">
-                      <span className={`${styles.sideRightTtitleInnerItem} ${["styles.js-scroll-trigger"]}`}>O</span>
+                      <span className={`${styles.sideRightTtitleInnerItem} ${[u-animation-fadein]}`}>O</span>
                     </span>
                     <span className={styles.sideRightTitleInner} datatext="P">
-                      <span className={`${styles.sideRightTtitleInnerItem} ${["styles.js-scroll-trigger"]}`}>P</span>
+                      <span className={`${styles.sideRightTtitleInnerItem} ${[u-animation-fadein]}`}>P</span>
                     </span>
                     <span className={styles.sideRightTitleInner} datatext="E">
-                      <span className={`${styles.sideRightTtitleInnerItem} ${["styles.js-scroll-trigger"]}`}>E</span>
+                      <span className={`${styles.sideRightTtitleInnerItem} ${[u-animation-fadein]}`}>E</span>
                     </span>
                     <span className={styles.sideRightTitleInner} datatext="N">
-                      <span className={`${styles.sideRightTtitleInnerItem} ${["styles.js-scroll-trigger"]}`}>N</span>
+                      <span className={`${styles.sideRightTtitleInnerItem} ${[u-animation-fadein]}`}>N</span>
                     </span>
                     <span className={styles.sideRightTitleInner} datatext="C">
-                      <span className={`${styles.sideRightTtitleInnerItem} ${["styles.js-scroll-trigger"]}`}>C</span>
+                      <span className={`${styles.sideRightTtitleInnerItem} ${[u-animation-fadein]}`}>C</span>
                     </span>
                     <span className={styles.sideRightTitleInner} datatext="A">
-                      <span className={`${styles.sideRightTtitleInnerItem} ${["styles.js-scroll-trigger"]}`}>A</span>
+                      <span className={`${styles.sideRightTtitleInnerItem} ${[u-animation-fadein]}`}>A</span>
                     </span>
                     <span className={styles.sideRightTitleInner} datatext="M">
-                      <span className={`${styles.sideRightTtitleInnerItem} ${["styles.js-scroll-trigger"]}`}>M</span>
+                      <span className={`${styles.sideRightTtitleInnerItem} ${[u-animation-fadein]}`}>M</span>
                     </span>
                     <span className={styles.sideRightTitleInner} datatext="P">
-                      <span className={`${styles.sideRightTtitleInnerItem} ${["styles.js-scroll-trigger"]}`}>P</span>
+                      <span className={`${styles.sideRightTtitleInnerItem} ${[u-animation-fadein]}`}>P</span>
                     </span>
                     <span className={styles.sideRightTitleInner} datatext="U">
-                      <span className={`${styles.sideRightTtitleInnerItem} ${["styles.js-scroll-trigger"]}`}>U</span>
+                      <span className={`${styles.sideRightTtitleInnerItem} ${[u-animation-fadein]}`}>U</span>
                     </span>
                     <span className={styles.sideRightTitleInner} datatext="S">
-                      <span className={`${styles.sideRightTtitleInnerItem} ${["styles.js-scroll-trigger"]}`}>S</span>
+                      <span className={`${styles.sideRightTtitleInnerItem} ${[u-animation-fadein]}`}>S</span>
                     </span>
                   </span>
                 </div>               
@@ -98,10 +101,12 @@ export default function Home() {
               </p>
             </div>
                 <div className={styles.categoryTtl}>
-                  <div className={`${styles.categoryTtlInner} ${[styles.js-scroll-trigger-ttl]}`}>
+                  <div className={`${styles.categoryTtlInner} ${[u-animation-fadein]}`}>
                     <h2>
                       <span className={`${styles.categoryTtlUp} ${styles.colorMain}`}>自分の「知りたい！」でChoiceできる</span>
-                      <span className={`${styles.categoryTtlBottom} ${styles.colorMain} ${styles.fadeTypeSame}`}>プログラム</span>
+                      <Animation>
+                        <span className={`${styles.categoryTtlBottom} ${styles.colorMain} ${styles.fadeTypeSame}`}>プログラム</span>
+                      </Animation>
                     </h2>
                   </div>
                 </div>
@@ -115,28 +120,28 @@ export default function Home() {
               <div className={styles.wrapInnerSide}>
                 <span className={styles.sideLeft}>
                   <span className={styles.sideLeftTitleInner} datatext="P">
-                    <span className={`${styles.sideLeftTitleInnerItem} ${[styles.js-scroll-trigger]}`}>P</span>
+                    <span className={`${styles.sideLeftTitleInnerItem} ${[u-animation-fadein]}`}>P</span>
                   </span>
                   <span className={styles.sideLeftTitleInner} datatext="R">
-                    <span className={`${styles.sideLeftTitleInnerItem} ${[styles.js-scroll-trigger]}`}>R</span>
+                    <span className={`${styles.sideLeftTitleInnerItem} ${[u-animation-fadein]}`}>R</span>
                   </span>
                   <span className={styles.sideLeftTitleInner} datatext="O">
-                    <span className={`${styles.sideLeftTitleInnerItem} ${[styles.js-scroll-trigger]}`}>O</span>
+                    <span className={`${styles.sideLeftTitleInnerItem} ${[u-animation-fadein]}`}>O</span>
                   </span>
                   <span className={styles.sideLeftTitleInner} datatext="G">
-                    <span className={`${styles.sideLeftTitleInnerItem} ${[styles.js-scroll-trigger]}`}>G</span>
+                    <span className={`${styles.sideLeftTitleInnerItem} ${[u-animation-fadein]}`}>G</span>
                   </span>
                   <span className={styles.sideLeftTitleInner} datatext="R">
-                    <span className={`${styles.sideLeftTitleInnerItem} ${[styles.js-scroll-trigger]}`}>R</span>
+                    <span className={`${styles.sideLeftTitleInnerItem} ${[u-animation-fadein]}`}>R</span>
                   </span>
                   <span className={styles.sideLeftTitleInner} datatext="A">
-                    <span className={`${styles.sideLeftTitleInnerItem} ${[styles.js-scroll-trigger]}`}>A</span>
+                    <span className={`${styles.sideLeftTitleInnerItem} ${[u-animation-fadein]}`}>A</span>
                   </span>
                   <span className={styles.sideLeftTitleInner} datatext="M">
-                    <span className={`${styles.sideLeftTitleInnerItem} ${styles.js-scroll-trigger}]`}>M</span>
+                    <span className={`${styles.sideLeftTitleInnerItem} ${u-animation-fadein}]`}>M</span>
                   </span>
                   <span className={styles.sideLeftTitleInner} datatext="S">
-                    <span className={`${styles.sideLeftTitleInnerItem} ${[styles.js-scroll-trigger]}`}>S</span>
+                    <span className={`${styles.sideLeftTitleInnerItem} ${[u-animation-fadein]}`}>S</span>
                   </span>
                 </span>
               </div>

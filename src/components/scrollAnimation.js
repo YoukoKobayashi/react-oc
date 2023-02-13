@@ -1,11 +1,11 @@
 import ScrollFadeIn from '@/components/scrollFadeIn'
 import { useEffect } from 'react';
 
-export default function Animation({ posts, tags }: Props) {
+export default function Animation({ Props }) {
   useEffect(() => {
     ScrollFadeIn();
   }, []);
   return (
-    <article className={`u-animation-fadein`}></article>
+    <div className={`$[is-slideIn]`}></div>
   )
 };
