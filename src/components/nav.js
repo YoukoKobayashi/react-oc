@@ -9,7 +9,8 @@ function Nav() {
           <Link href="/" >イベント</Link>
         </li>
         <li>
-          <Link href="/about">なんでも相談・質問</Link>
+          <Link
+            <a href="/about">なんでも相談・質問</Link>
         </li>
         <li>
           <Link href="/about">全国進路相談会</Link>
