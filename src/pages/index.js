@@ -4,6 +4,7 @@ import Hero from "../components/hero";
 import styles from "../styles/layout.module.scss";
 import Btn from "@/components/btn";
 import Animation from "../components/scrollAnimation";
+// import ScrollRevealContainer from "../components/scrollRevealContainer";
 
 export default function Home() {
 	return (
