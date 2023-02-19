@@ -1,5 +1,6 @@
 import '@/styles/globals.css'
 import Layout from '@/components/layout'
+import ScrollCatch from '@/components/scrollCatch'
 
 function MyApp({ Component, pageProps }) {
  

@@ -4,6 +4,7 @@ import Hero from "../components/hero";
 import styles from "../styles/layout.module.scss";
 import Btn from "@/components/btn";
 import Animation from "../components/scrollAnimation";
+import ScrollCatch from "@/components/scrollCatch";
 // import ScrollRevealContainer from "../components/scrollRevealContainer";
 
 export default function Home() {
@@ -25,18 +26,15 @@ export default function Home() {
 									<h2>
 										<span
 											className={`${styles.categoryTtlUp} 
-												u-animation-fadein,
 											`}
 										>
-											第1回 開催日
-										</span>
-										<Animation>
+											第1回 開催日</span>
+										<ScrollCatch>
 											<span
 												className={`${styles.categoryTtlBottom} ${styles.fadeTypeSame}`}
-											>
-												2023年3月19日(日)10:00
+											>2023年3月19日(日)10:00
 											</span>
-										</Animation>
+										</ScrollCatch>
 									</h2>
 								</div>
 							</div>

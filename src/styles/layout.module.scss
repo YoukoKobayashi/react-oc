@@ -406,25 +406,12 @@
 
 
 /*  fade_in_animation .categoryTtl 初期値と終了値  */
-// .fadeTypeSame {
-//   opacity: 0;
-// }
-// .is-slideIn .fadeTypeSame {
-//   transition: 0.9s;
-//   opacity: 1;
-// }
-
-.is-slideIn .fadeTypeSame {
-  animation: delayfadein 1.9s 0s linear forwards;
+.fadeTypeSame {
+  opacity: 0;
 }
-
-@keyframes delayfadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.isSlideIn .fadeTypeSame {
+  transition: 0.9s;
+  opacity: 1;
 }
 
 // /*  fade_in_animation top-title 初期値と終了値  */
@@ -440,6 +427,8 @@
     opacity: 1;
   }
 }
+
+
 
 /*  sideRight-title:右にあり  */
 .wrap {
