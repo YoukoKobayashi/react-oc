@@ -6,13 +6,13 @@
   --gray-75: #444444;
   --black: #222222;
 
-  ---white: #fff;
+  --white: #fff;
   --main: #191970;
   --base: #435b99;
   --base3: rgba(125, 160, 219, 0.2);
   --accent: #bed5e7; 
   --btn: #2b63a8;
-  --btn2: rgba(43, 99, 168,.8)
+  --btn2: rgba(43, 99, 168,.8);
   --nav: #6a9bd9;
   --lighting: rgba(252, 240, 242, 0.7); 
   --accent2:rgba(190, 213, 231, .5);
@@ -89,7 +89,7 @@ h3 {
 }
 
 /*  reset */
-bpdy,h1,h2,h3,p,figure,ul {
+body,h1,h2,h3,p,figure,ul {
   margin: 0;
   padding: 0;
   list-style: none;

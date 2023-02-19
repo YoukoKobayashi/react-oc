@@ -33,20 +33,27 @@
   font-feature-settings: "palt";
   text-shadow: 0 6px 6px rgba(0, 0, 0, 0.7);
   z-index: 10;
-
-  @media (var(--lg)) {
-    font-size: clamp(74px, 90/1200 * 100vw, 90px);
+}
+  @media screen and (min-width: 901px) and (max-width: 1280px) {
+    .title1 {
+      font-size: clamp(74px, 90/1200 * 100vw, 90px);
+    }
   }
-  @media (var(--ltb)) {
-    top: 26vh;
+  @media screen and (max-width: 900px) {
+    .title1 {
+      top: 26vh;
     font-size: clamp(66px, 68/900 * 100vw, 72px);
   }
-  @media (var(--tb)) {
-    top: 28vh;
+}
+  @media screen and (max-width: 768px) {
+      .title1 {
+  top: 28vh;
     font-size: clamp(58px, 64/768 * 100vw, 66px);
     font-weight: 900;
   }
-  @media (var(--sp)) {
+}
+  @media screen and (max-width: 499px) {
+    .title1 {
     top: 24vh;
     left: 24px;
     font-size: clamp(36px, 56/500 * 100vw, 58px);
@@ -65,23 +72,31 @@
   font-feature-settings: "palt";
   text-shadow: 0 6px 6px rgba(0, 0, 0, 0.7);
   z-index: 10;
-  @media (var(--lg)) {
-    font-size: clamp(74px, 90/1200 * 100vw, 90px);
+}
+  @media screen and (min-width: 901px) and (max-width: 1280px) {
+    .title2 {
+      font-size: clamp(74px, 90/1200 * 100vw, 90px);
+    }
   }
-  @media (var(--ltb)) {
-    top: 26vh;
-    font-size: clamp(66px, 68/900 * 100vw, 72px);
+  @media screen and (max-width: 900px) {
+    .title2 {
+      top: 26vh;
+      font-size: clamp(66px, 68/900 * 100vw, 72px);
+    }
   }
-  @media (var(--tb)) {
-    top: 28vh;
-    font-size: clamp(58px, 64/768 * 100vw, 66px);
-    font-weight: 900;
+  @media screen and (max-width: 768px) {
+    .title2 {
+      top: 28vh;
+      font-size: clamp(58px, 64/768 * 100vw, 66px);
+      font-weight: 900;
+    }
   }
-  @media (var(--sp)) {
-    top: 24vh;
-    left: 24px;
-    font-size: clamp(36px, 56/500 * 100vw, 58px);
-    font-weight: 900;
+  @media screen and (max-width: 499px) {
+    .title2 {
+      top: 30vh;
+      left: 24px;
+      font-size: clamp(36px, 56/500 * 100vw, 58px);
+      font-weight: 900;
   }
 }
 .subtitle {
@@ -97,19 +112,19 @@
   text-transform: uppercase;
   text-shadow: 0 6px 6px rgba(0, 0, 0, 0.7);
   z-index: 10;
-  @media (var(--lg)) {
+  @media screen and (min-width: 901px) and (max-width: 1280px) {
     font-size: clamp(74px, 90/1200 * 100vw, 90px);
   }
-  @media (var(--ltb)) {
+  @media screen and (max-width: 900px) {
     top: 26vh;
     font-size: clamp(66px, 68/900 * 100vw, 72px);
   }
-  @media (var(--tb)) {
+  @media screen and (max-width: 768px) {
     top: 28vh;
     font-size: clamp(58px, 64/768 * 100vw, 66px);
     font-weight: 900;
   }
-  @media (var(--sp)) {
+  @media screen and (max-width: 499px) {
     top: 24vh;
     left: 24px;
     font-size: clamp(36px, 56/500 * 100vw, 58px);

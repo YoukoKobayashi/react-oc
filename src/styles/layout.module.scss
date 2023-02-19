@@ -16,7 +16,7 @@
 
 
 .ltbIgnore {
-  @media(var(--ltb)) {
+  @mediascreen and (max-width: 900px) {
     display: none;
   }
 }
@@ -38,15 +38,15 @@
       width: 76%;
       height: 120px;
     }
-    @media(var(--ltb)) {
+    @mediascreen and (max-width: 900px) {
       width: 88%;
       height: 105px;
     }
-    @media(var(--tb)) {
+    @mediascreen and (max-width: 768px) {
       width: 98%;
       height: 105px;
     }
-    @media(var(--sp)) {
+    @mediascreen and (max-width: 499px) {
       margin: 12px auto 0;
       width: 98%;
       padding-left: 0;
@@ -64,13 +64,13 @@
     @media(var(--lg)) {
       font-size: var(--font-ttl-lg);
     }
-    @media(var(--ltb)) {
+    @mediascreen and (max-width: 900px) {
       font-size: var(--font-ttl-ltb);
     }
-    @media(var(--tb)) {
+    @mediascreen and (max-width: 768px) {
       font-size: var(--font-ttl-tb);
     }
-    @media(var(--sp)) {
+    @mediascreen and (max-width: 499px) {
       font-size: var(--font-ttl-sp);
     }
   }
@@ -91,14 +91,14 @@
     @media(var(--lg)) {
       font-size: var(--font-categoryttlup-lg);
     }
-    @media(var(--ltb)) {
+    @mediascreen and (max-width: 900px) {
       font-size: var(--font-categoryttlup-ltb);
     }
-    @media(var(--tb)) {
+    @mediascreen and (max-width: 768px) {
       font-size: var(--font-categoryttlup-tb);
       font-feature-settings: "palt";
     }
-    @media(var(--sp)) {
+    @mediascreen and (max-width: 499px) {
       font-size: var(--font-categoryttlup-sp);
       font-feature-settings: "palt";
     }
@@ -122,17 +122,17 @@
     margin-left: 8px;
     font-size: var(--font-ttl-lg);
   }
-  @media(var(--ltb)) {
+  @mediascreen and (max-width: 900px) {
     margin-top: 10px;
     margin-left: 8px;
     font-size: var(--font-ttl-ltb);
   }
-  @media(var(--tb)) {
+  @mediascreen and (max-width: 768px) {
     margin-top: 10px;
     margin-left: 8px;
     font-size: var(--font-ttl-tb);
   }
-  @media(var(--sp)) {
+  @mediascreen and (max-width: 499px) {
     margin-top: 8px;
     margin-left: 10px;
     padding: 0;
@@ -142,13 +142,13 @@
 
   span {
     font-size: 16px;
-    @media(var(--ltb)) {
+    @mediascreen and (max-width: 900px) {
       font-size: 14px;
     }
-    @media(var(--tb)) {
+    @mediascreen and (max-width: 768px) {
       font-size: 14px;
     }
-    @media(var(--sp)) {
+    @mediascreen and (max-width: 499px) {
       font-size: 10px;
     }
   }
@@ -167,12 +167,12 @@
     border-left: 8px solid currentColor;
     font-size: 1em;
 
-    @media(var(--ltb)) {
+    @mediascreen and (max-width: 900px) {
       border-left: 7px solid currentColor;
       top: 10px;
       transform: translateX(-50%);
     }
-    @media(var(--sp)) {
+    @mediascreen and (max-width: 499px) {
       border-left: 5px solid currentColor;
       top: 4px;
       transform: translateX(-50%);
@@ -192,14 +192,14 @@
     padding-left: 0px;
     font-size: --font-lg;
   }
-  @media(var(--ltb)) {
+  @mediascreen and (max-width: 900px) {
     padding: 4px 0 16px 8px;
     font-size: --font-ltb;
   }
-  @media(var(--tb)) {
+  @mediascreen and (max-width: 768px) {
     font-size: --font-tb;
   }
-  @media(var(--sp)) {
+  @mediascreen and (max-width: 499px) {
     padding: 8px 0 16px;
     font-size: --font-sp;
   }
@@ -224,7 +224,7 @@
   width: 100%;
   margin: 0px auto;
   padding: 4px 40px;
-  @media(var(--sp)) {
+  @mediascreen and (max-width: 499px) {
     flex-direction: column;
     justify-content: center;
     width: 96%;
@@ -235,7 +235,7 @@
     max-width: 32%;
     margin: 0 auto;
     padding: 4px 2px;
-    @media(var(--sp)) {
+    @mediascreen and (max-width: 499px) {
       display: block;
       max-width: 90%;
       margin: 0 auto;
@@ -257,10 +257,10 @@
   max-width: 100%;
   margin: 0px auto;
   padding: 4px 24px 0;
-  @media(var(--ltb)) {
+  @mediascreen and (max-width: 900px) {
     padding: 4px 16px 0;
   }
-  @media(var(--sp)) {
+  @mediascreen and (max-width: 499px) {
     width: 94%;
     padding: 8px 8px 0;
   }
@@ -275,11 +275,11 @@
   height: auto;
   margin: 40px auto 12px;
   src: url(http://toin.ac.jp/ouen/event/opencampus/asset/OC2020_onegai.jpg);
-  @media(var(--tb)) {
+  @mediascreen and (max-width: 768px) {
     max-width: 96%;
     height: auto;
   }
-  @media(var(--sp)) {
+  @mediascreen and (max-width: 499px) {
     max-width: 96%;
     height: auto;
   }
@@ -312,22 +312,22 @@
     display: none;
   }
 }
-@media(var(--ltb)) {
+@mediascreen and (max-width: 900px) {
   .ltbIgnore {
     display: none;
   }
 }
-@media(var(--tb)) {
+@mediascreen and (max-width: 768px) {
   .tbIgnore {
     display: none;
   }
 }
-@media(var(--sp)) {
+@mediascreen and (max-width: 499px) {
   .spIgnore {
     display: none;
   }
 }
-@media(var(--sp)) {
+@mediascreen and (max-width: 499px) {
   .spVisible {
     display: block;
   }
@@ -340,15 +340,15 @@
   margin: -10px auto;
   width: 105px;
   height: 35px;
-  @media(var(--ltb)) {
+  @mediascreen and (max-width: 900px) {
     width: 90px;
     height: 30px;
   }
-  @media(var(--tb)) {
+  @mediascreen and (max-width: 768px) {
     width: 75px;
     height: 25px;
   }
-  @media(var(--sp)) {
+  @mediascreen and (max-width: 499px) {
     width: 60px;
     height: 20px;
   }
@@ -363,15 +363,15 @@
   margin: -10px auto;
   width: 105px;
   height: 35px;
-  @media(var(--ltb)) {
+  @mediascreen and (max-width: 900px) {
     width: 90px;
     height: 30px;
   }
-  @media(var(--tb)) {
+  @mediascreen and (max-width: 768px) {
     width: 75px;
     height: 25px;
   }
-  @media(var(--sp)) {
+  @mediascreen and (max-width: 499px) {
     width: 60px;
     height: 20px;
   }
@@ -386,15 +386,15 @@
   margin: -10px auto;
   width: 105px;
   height: 35px;
-  @media(var(--ltb)) {
+  @mediascreen and (max-width: 900px) {
     width: 90px;
     height: 30px;
   }
-  @media(var(--tb)) {
+  @mediascreen and (max-width: 768px) {
     width: 75px;
     height: 25px;
   }
-  @media(var(--sp)) {
+  @mediascreen and (max-width: 499px) {
     width: 60px;
     height: 20px;
   }
@@ -406,12 +406,25 @@
 
 
 /*  fade_in_animation .categoryTtl 初期値と終了値  */
-.fadeTypeSame {
-  opacity: 0;
-}
+// .fadeTypeSame {
+//   opacity: 0;
+// }
+// .is-slideIn .fadeTypeSame {
+//   transition: 0.9s;
+//   opacity: 1;
+// }
+
 .is-slideIn .fadeTypeSame {
-  transition: 0.9s;
-  opacity: 1;
+  animation: delayfadein 1.9s 0s linear forwards;
+}
+
+@keyframes delayfadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 // /*  fade_in_animation top-title 初期値と終了値  */
@@ -447,11 +460,11 @@
   width: 10%;
   top: 0px;
   left: calc(100vw - 10px);
-  @media(var(--ltb)) {
+  @mediascreen and (max-width: 900px) {
     font-size: 60px;
     width: 70px;
   }
-  @media(var(--sp)) {
+  @mediascreen and (max-width: 499px) {
     font-size: 40px;
     width: 55px;
     top: 200px;
@@ -522,16 +535,16 @@
   height: fit-content;
   border: solid 2px var(--main);
   border-radius: 50px;
-  @media(var(--ltb)){
+  @mediascreen and (max-width: 900px){
     margin-left: 28px;
     padding: 9px;
     font-size: var(--font-ttl-ltb);
   }
-  @media(var(--tb)){
+  @mediascreen and (max-width: 768px){
     padding: 8px;
     font-size: var(--font-ttl-tb);
   }
-  @media(var(--sp)){
+  @mediascreen and (max-width: 499px){
     margin-left: 16px;
     font-size: var(--font-ttl-sp);
   }
