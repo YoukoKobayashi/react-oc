@@ -74,7 +74,7 @@
 
 body {
   color: var(--black);
-  /* font-family: "M PLUS 1p", sans-serif; */
+  font-family: "M PLUS 1p", sans-serif; 
   font-family: "Sawarabi Gothic", sans-serif;
   font-size: var(--body);
 }
